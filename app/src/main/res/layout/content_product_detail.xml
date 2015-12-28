@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ankit.smartprix.Prod_detail">
+
+
+    <TextView
+        android:id="@+id/prod_detail_name"
+        android:layout_width="match_parent"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_height="50dp" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/prod_detail_pic"
+        android:layout_below="@id/prod_detail_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_height="170dp"
+        android:layout_width="200dp"/>
+
+    <TextView
+        android:id="@+id/prod_detail_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp"
+        android:layout_below="@id/prod_detail_pic"/>
+
+    <ListView
+        android:id="@+id/prod_detail_stores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prod_detail_price">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/prod_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="20sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp"
+        android:layout_below="@id/prod_detail_price"/>
+
+
+</RelativeLayout>
+

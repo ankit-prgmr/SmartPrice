@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ankit.smartprix.Prod_list">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+
+    <TextView
+        android:id="@+id/category_label"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:background="#E5E5E5"
+        android:text="Ankit"
+        android:textStyle="bold"
+        android:layout_marginTop="?attr/actionBarSize"/>
+
+    <ListView
+        android:id="@+id/prod_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/list_divider"
+        android:layout_marginTop="115dp">
+
+    </ListView>
+
+
+</android.support.design.widget.CoordinatorLayout>
